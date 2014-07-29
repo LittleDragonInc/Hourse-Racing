@@ -8,7 +8,8 @@ Usage
 ============
 python -m SimpleHTTPServer 9080 
 
-then browse to http://localhost:9080/
+then browse to localhost:9080/
+
 Port can also be of your choice
 
 Licensing
