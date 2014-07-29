@@ -6,9 +6,9 @@ Updated to version 1.10
 
 Usage
 ============
-python -m SimpleHTTPServer 9090 
+python -m SimpleHTTPServer 9999 
 
-then browse to <a href="http://localhost:9090">localhost</a>
+then browse to <a href="http://localhost:9999">localhost</a>
 
 Licensing
 ============
