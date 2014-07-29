@@ -10,6 +10,7 @@
     <script src="js/Game.js"></script>
 	<script src="js/Spaceship.js"></script>
 	<script src="js/Car.js"></script>
+	  <script src="js/track.js"></script>
 
 	  <script src="js/bearBuilding.js"></script>
 
@@ -37,7 +38,7 @@ window.onload = function() {
 
 	//	Create your Phaser game and inject it into the gameContainer div.
 	//	We did it in a window.onload event, but you can do it anywhere (requireJS load, anonymous function, jQuery dom ready, - whatever floats your boat)
-	var game = new Phaser.Game(800, 300, Phaser.AUTO, 'gameContainer');
+	var game = new Phaser.Game(1920, 1080, Phaser.AUTO, 'gameContainer');
 
 	//	Add the States your game has.
 	//	You don't have to do this in the html, it could be done in your Boot state too, but for simplicity I'll keep it here.
@@ -48,6 +49,8 @@ window.onload = function() {
 	game.state.add('Car', BasicGame.Car);
 	game.state.add('Spaceship', BasicGame.Spaceship);
 	game.state.add('bearBuilding', BasicGame.bearBuilding);
+	game.state.add('Track', BasicGame.Track);
+
 
 
 	//	Now start the Boot state.
@@ -58,7 +61,7 @@ window.onload = function() {
 </script>
 
 <div id="readme">
-<h2>Hourse Racing 2014, Build a Hourse Edition*</h2>
+<h2>Hourse Racing 2014, OffRoad Adventures*</h2>
 <ul>
 
 <li><strong>High Concept:</strong>
@@ -80,7 +83,7 @@ This game falls under the hybrid of racing games and hourses.
 
 <table style="width:400px">
 <tr>
-<td>Super Button</td>
+<td>Start Button</td>
 <td>Normal Race</td>
 
 </tr>
@@ -104,55 +107,16 @@ This game falls under the hybrid of racing games and hourses.
 <td>Shift down a gear</td>
 
 </tr>
+<tr>
+<td>Left Arrow</td>
+<td>Brake</td>
+
+</tr>
 </table>
 
 
 </li>
 
-<li><strong>Prototype goal:</strong>
-This prototype attempts to evaluate a home brewed physics engine for hourses.
-</li>
-
-<li><strong>Features:</strong>
-You can customize your hourse in the build a hourse workshop. Currency is berrys.</li>
-
-<li><strong>Setting/Premise:</strong>
-The world is set in the fantasy land of Gileneor, where players have trained their hourses for this race. The land tiles represent difficulty and struggle, while the green flag represents hope and victory. Unfortunately if you lose, you will get the red flag which is not good.
-
-
-</li>
-
-<li><strong>Story:</strong>
-The game story is based on a struggle for wealth. Players will gain rewards as they win races and compete agains't other hourses. Because this game utilizes real money, the struggle is made even more realistic.
-</li>
-
-<li><strong>Target Audience:</strong>
-This game attempts to reach hourse racing game fans. Fans will enjoy using their real life wallets to gain advantages in a virtual game.
-</li>
-
-<li><strong>Play time:</strong>
-This game can take somewhere from 20 seconds to till when the players computer crashes.
-</li>
-
-<li><strong>Strategies:</strong>
-Players should likely just accelerate and shift gears upwards at the correct times to win.</li>
-
-<li><strong>Estimated Schedule:</strong>
-Implementing a emulated microtranscation store will take a few days to develop and implement.</li>
-
-<li><strong>Team:</strong>
-My main skills are art creation. I need people with AI skills to further improve my main screen movement. I also need people who have experience with car engines, nuclear engines, hourse engines and physics.
-</li>
-
-<li><strong>Prototype Assets:</strong>
-Except for the <a href = 'frugalmomeh.com'>build a bear image</a>, <a href = "http://soundbible.com/1807-Explosion-Ultra-Bass.html">the victory sound,</a> and the song Voyage 1969 & Voyage 1970, all assets were made from scratch.
-</li>
-
-<li><strong>Prototype Closest Other Game:</strong>
-This is a fusion of Catch rare fish, get reward !!! and Hourse Racing 2014.
-</li>
-<br>
-* Professional driver on a closed course. Do Not Attempt.
 </ul>
 </div>
 </body>

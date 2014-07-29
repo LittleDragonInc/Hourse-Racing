@@ -1,51 +1,46 @@
 BasicGame = {};
 
 BasicGame.Boot = function (game) {
-
+    c = "hourse"; //current hourse
+    d = "mountainm"; //current map
+    e = 'mountainJ'; //current map
+    f = 0; //speed
+    g = 0; //gravity, related to weight
+    a = 0; //acceleration mod
 };
 
 BasicGame.Boot.prototype = {
 
-		preload: function () {
+    preload: function () {
 
-	//  Here we load the assets required for our preloader (in this case a background and a loading bar)
-	this.load.image('preloaderBackground', 'images/loading_secure.png');
-	this.load.image('preloaderBar', 'images/loading.png');
+        this.load.image('preloaderBackground', 'images/loading_secure.png');
+        this.load.image('preloaderBar', 'images/loading.png');
 
-},
+    },
 
-create: function () {
+    create: function () {
 
-	//  Unless you specifically know your game needs to support multi-touch I would recommend setting this to 1
-	this.game.input.maxPointers = 1;
+        this.game.input.maxPointers = 1;
 
-	//  Phaser will automatically pause if the browser tab the game is in loses focus. You can disable that here:
-	this.game.stage.disableVisibilityChange = true;
+        this.game.stage.disableVisibilityChange = true;
 
-	if (this.game.device.desktop)
-	{
-		//  If you have any desktop specific settings, they can go in here
-		this.game.stage.scale.pageAlignHorizontally = true;
+        if (this.game.device.desktop) {
+            this.game.stage.scale.pageAlignHorizontally = true;
 
-	}
-	else
-	{
-		//  Same goes for mobile settings.
-		//  In this case we're saying "scale the game, no lower than 480x260 and no higher than 1024x768"
-		this.game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
-		this.game.stage.scale.minWidth = 270;
-		this.game.stage.scale.minHeight = 100;
-		this.game.stage.scale.maxWidth = 800;
-		this.game.stage.scale.maxHeight = 300;
-		this.game.stage.scale.forceLandscape = true;
-		this.game.stage.scale.pageAlignHorizontally = true;
-		this.game.stage.scale.setScreenSize(true);
-	}
+        } else {
 
-	//  By this point the preloader assets have loaded to the cache, we've set the game settings
-	//  So now let's start the real preloader going
-	this.game.state.start('Preloader');
+            this.game.stage.scaleMode = Phaser.StageScaleMode.SHOW_ALL;
+            this.game.stage.scale.minWidth = 270;
+            this.game.stage.scale.minHeight = 100;
+            this.game.stage.scale.maxWidth = 800;
+            this.game.stage.scale.maxHeight = 300;
+            this.game.stage.scale.forceLandscape = true;
+            this.game.stage.scale.pageAlignHorizontally = true;
+            this.game.stage.scale.setScreenSize(true);
+        }
 
-}
+        this.game.state.start('Preloader');
+
+    }
 
 };
