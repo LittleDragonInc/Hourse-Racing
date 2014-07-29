@@ -6,11 +6,9 @@ Updated to version 1.10
 
 Usage
 ============
-python -m SimpleHTTPServer 9080 
+python -m SimpleHTTPServer 9090 
 
-then browse to localhost:9080
-
-Port can also be of your choice
+then browse to <a href="http://localhost:9090">localhost</a>
 
 Licensing
 ============
