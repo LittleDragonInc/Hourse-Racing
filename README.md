@@ -15,3 +15,9 @@ Licensing
 Joint collaboration under Hourse Dojo Development Studios and Little Dragon Inc
 
 All rights reserved
+
+Attribution
+============
+Maps and various hourse stats by team members of Hourse Dojo Development Studios.
+
+Song is Erhu Horse Racing and public domain.
